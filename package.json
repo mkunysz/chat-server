@@ -1,0 +1,23 @@
+{
+  "name": "chat-server",
+  "version": "0.1.0",
+  "description": "Chat server based on socket.io",
+  "author": "Marcin Kunysz",
+  "scripts": {
+    "start": "nodemon server",
+    "start-prod": "node server",
+    "lint": "eslint --ignore-path .gitignore ."
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mkunysz/chat-server.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0"
+  }
+}
