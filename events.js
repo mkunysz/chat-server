@@ -1,7 +1,7 @@
 'use strict';
 
 class Events {
-  constructor(app, io){
+  constructor(io){
     this.io = io;
     this.users = {};
   }

@@ -12,7 +12,7 @@ class Server {
       console.log(`server running http://localhost:${this.port}`);
     });
     this.io = io(this.server);
-    new events(this.app, this.io).eventsConfig();
+    new events(this.io).eventsConfig();
   }
 }
 
