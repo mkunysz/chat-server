@@ -2,7 +2,7 @@
 
 const express = require('express');
 const io = require('socket.io');
-const routes = require('./routes');
+const events = require('./events');
 
 class Server {
   constructor() {
@@ -12,7 +12,7 @@ class Server {
       console.log(`server running http://localhost:${this.port}`);
     });
     this.io = io(this.server);
-    new routes(this.app, this.io).routesConfig();
+    new events(this.app, this.io).eventsConfig();
   }
 }
 

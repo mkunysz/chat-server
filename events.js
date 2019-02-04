@@ -1,6 +1,6 @@
 'use strict';
 
-class Routes {
+class Events {
   constructor(app, io){
     this.io = io;
     this.users = {};
@@ -28,9 +28,9 @@ class Routes {
    *  Initialize socket events
    */
 
-  routesConfig() {
+  eventsConfig() {
     this.socketEvents(this.io);
   }
 }
 
-module.exports = Routes;
+module.exports = Events;

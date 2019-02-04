@@ -23,7 +23,7 @@ Server runs by default on localhost:8081, port and host can be changed in `serve
 
 ## Broadcast events
 
-Events that are received by server are located in `routes.js`:
+Events that are received by server are located in `events.js`:
 
  * `connected` new client is connected to server
  * `disconnected` client is disconnected from server
